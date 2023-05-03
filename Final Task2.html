@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Task2</title>
+    <script type="text/javascript" src="Final Task2.js"></script>
+</head>
+<body>
+      <h2>Basketball Order Form</h2>
+      <fieldset style="width: 380px;">
+        <table>
+          <tr>
+            <td>
+                <label for="production">Basketball Products:</label>
+                <input type="text" id="production" name="production" value="0" readonly="">
+                <button onclick="increment()">+</button>
+                <button onclick="decrement()">-</button><br>
+                <label for="fee">Shipping and Handling Fee:</label>
+                <input value="4.99" id="fee" name="fee"><br>
+                <button type="button" onclick="calculateTotal()">Calculate Total</button>
+            </td>
+          </tr>
+        </table>
+      </fieldset>  
+        <h2>Order Summary</h2>
+        <table>
+            <tr>
+              <td>Items:</td>
+              <td><span id="items_summary">$0.00</span></td>
+            </tr>
+            <tr>
+              <td>Shipping & Handling:</td>
+              <td><span id="shipping_summary">$0.00</span></td>
+            </tr>
+            <tr>
+              <td>Total Before Tax:</td>
+              <td><span id="totalbefore_tax">$0.00</span></td>
+            </tr>
+            <tr>
+              <td>Estimated Tax(10%):</td>
+              <td><span id="est_tax">$0.00</span></td>
+            </tr>
+            <tr>
+              <td style="color: red;">Order total:</td>
+              <td><span id="total_order" class="total">$0.00</span></td>
+            </tr>
+          </table>
+    </div>
+            <a href="index.html">Back</a>
+</body>
+</html> 
